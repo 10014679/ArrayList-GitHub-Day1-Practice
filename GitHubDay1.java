@@ -15,5 +15,14 @@ public class GitHubDay1{
 		totallist.add(list2.get(i));
 	}
 
+	printArrayList(totallist);
 	}
+
+	public static void printArrayList(ArrayList<Integer> x){
+	//Note: method can be called toString
+		for(int i = 0; i < x.size()-1; i++)
+			System.out.print(x.get(i) + ", ");
+		System.out.println(x.get(x.size()-1));
+	}
+
 }
